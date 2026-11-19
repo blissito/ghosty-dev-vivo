@@ -24,3 +24,8 @@ test('una ruta desconocida responde 404', async () => {
   const res = await fetch(`${base}/nope`);
   assert.equal(res.status, 404);
 });
+
+test('GET //evil/health no se lee como /health', async () => {
+  const res = await fetch(`${base}//evil/health`);
+  assert.equal(res.status, 404);
+});
