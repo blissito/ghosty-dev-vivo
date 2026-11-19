@@ -1,8 +1,9 @@
 {
   "name": "ghosty-dev-vivo",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
     "test": "node --test"
   },
   "keywords": [],
